@@ -1,7 +1,6 @@
 import "./App.css";
 import Header from "./Components/Header";
 import Todos from "./Components/Todos";
-import Footer from "./Components/Footer";
 import AddToDo from "./Components/AddToDo";
 import { useState, useEffect } from "react";
 function App() {
@@ -44,8 +43,6 @@ function App() {
       <Header title="ToDo's " searchBar={true} />
       <AddToDo addToDo={addToDo} />
       <Todos todos={todos} onDelete={onDelete} />
-
-      <Footer />
     </>
   );
 }
